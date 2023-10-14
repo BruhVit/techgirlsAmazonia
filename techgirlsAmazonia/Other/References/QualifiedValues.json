@@ -1,0 +1,18 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_cr56a_oficial_forms",
+      "Namespace": "oficial (Formulários)",
+      "Values": {
+        "Information": "539cf635-608f-4354-a003-8e47126f800a"
+      }
+    },
+    {
+      "Kind": "default.cds_cr56a_item_forms",
+      "Namespace": "item (Formulários)",
+      "Values": {
+        "Information": "ce70ebae-d263-4e94-aea6-f42e1cf763bf"
+      }
+    }
+  ]
+}

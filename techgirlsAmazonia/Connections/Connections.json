@@ -1,0 +1,30 @@
+{
+  "b91e35dc-2af5-4e37-a823-8f75ebbed7fc": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Planilhas Google",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1658/1.0.1658.3450/googlesheet/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_googlesheet",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "1cfvew66sXUhjQfEVCf_L4Ym0-HUFT7MUWU7Yv_KBSiQ": {
+        "dataSources": {
+          "Página1": {
+            "tableName": "0"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Página1"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "b91e35dc-2af5-4e37-a823-8f75ebbed7fc"
+  }
+}

@@ -1,0 +1,3 @@
+{
+  "AppFromDataMetaDataIdsToEntityNameMappings": "{\"%DataSourceName.AFD%\":\"Página1\",\"%DataSourceValue.AFD%\":\"[@Página1]\",\"%SortFieldName.AFD%\":\"\\\"nome\\\"\",\"%FilterFieldName.AFD%\":\"nome\",\"%PrimaryNameField.AFD%\":\"\\\"nome\\\"\",\"%PrimaryNameFieldDisplayName.AFD%\":\"'nome'\",\"%SearchFieldName.AFD%\":\"\\\"nome\\\"\",\"%StartsWithFieldName.AFD%\":\"nome\",\"%DeleteConfirmFieldName.AFD%\":\"nome\",\"%SortDescending.AFD%\":\"SortDescending1\",\"%BrowseScreen.AFD%\":\"BrowseScreen1\",\"%DetailScreen.AFD%\":\"DetailScreen1\",\"%EditScreen.AFD%\":\"EditScreen1\",\"%BrowseContainer.ID%\":\"BrowseGallery1\",\"%DetailEditContainer.ID%\":\"EditForm1\"}"
+}

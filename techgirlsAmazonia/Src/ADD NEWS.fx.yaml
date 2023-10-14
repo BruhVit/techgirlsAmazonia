@@ -1,0 +1,140 @@
+"'ADD NEWS' As screen":
+    Fill: =
+    OnVisible: =
+
+    RectQuickActionBar1_1 As rectangle:
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =1
+
+    LblAppName1_1 As label:
+        Fill: =RGBA(58, 58, 58, 0)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =88
+        Size: =27
+        Text: ="Info AM"
+        Width: =Parent.Width - Self.X - IconSortUpDown1.Width - IconNewItem1.Width - IconRefresh1.Width
+        Wrap: =false
+        X: =40
+        ZIndex: =2
+
+    Rectangle4 As rectangle:
+        Fill: =RGBA(130, 141, 158, 1)
+        Height: =276
+        OnSelect: |
+            =
+        Width: =479
+        X: =80
+        Y: =190
+        ZIndex: =5
+
+    DatePicker1 As datepicker:
+        Height: =45
+        Size: =18
+        Width: =186
+        X: =376
+        Y: =132
+        ZIndex: =8
+
+    Icon1_1 As icon.Home:
+        BorderColor: =RGBA(116, 116, 116, 1)
+        BorderThickness: =5
+        Color: =RGBA(116, 116, 116, 1)
+        Height: =68
+        Icon: =Icon.Home
+        OnSelect: =Navigate('PAGINA INICIAL')
+        PaddingTop: =3
+        Width: =79
+        X: =80
+        Y: =947
+        ZIndex: =9
+
+    AddMediaWithImage1 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =10
+
+        UploadedImage1 As image:
+            Height: =276
+            Image: =If(IsBlank(AddMediaButton1.Media), SampleImage, AddMediaButton1.Media)
+            ImagePosition: =ImagePosition.Fill
+            Width: =478
+            X: =AddMediaButton1.X
+            Y: =AddMediaButton1.Y
+            ZIndex: =11
+
+        AddMediaButton1 As addMedia:
+            Height: =276
+            Size: =25
+            Width: =467
+            X: =80
+            Y: =190
+            ZIndex: =12
+
+    Button1 As button:
+        BorderColor: |
+            =ColorFade(Self.Fill, -15%)
+        Height: =56
+        OnSelect: |-
+            =Collect( item, { Título: TextInput1.Text, imagem: AddMediaButton1 })
+        Size: =24
+        Text: ="salvar"
+        Width: =254
+        X: =266
+        Y: =891
+        ZIndex: =16
+
+    Button2 As button:
+        Height: =60
+        OnSelect: =SaveData( item, "LocalSavedItems" )
+        Size: =24
+        Text: ="Enviar"
+        Width: =254
+        X: =266
+        Y: =982
+        ZIndex: =17
+
+    Button3 As button:
+        Height: =60
+        OnSelect: |
+            =LoadData( item , "LocalSavedItems" ); Navigate(SALVAR); 
+        Size: =24
+        Text: ="Carregar"
+        Width: =253
+        X: =267
+        Y: =1064
+        ZIndex: =18
+
+    TextInput1_2 As text:
+        Default: =
+        Height: =280
+        HintText: ="Título"
+        Italic: =true
+        Size: =18
+        Width: =474
+        X: =88
+        Y: =590
+        ZIndex: =19
+
+    Label1 As label:
+        Height: =70
+        Size: =21
+        Text: ="Texto"
+        Width: =478
+        X: =80
+        Y: =482
+        ZIndex: =20
+
+    TextInput1 As text:
+        Default: ="Entrada de texto"
+        Height: =70
+        Size: =21
+        Width: =560
+        X: =80
+        Y: =500
+        ZIndex: =21
+

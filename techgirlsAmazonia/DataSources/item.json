@@ -1,0 +1,102 @@
+[
+  {
+    "DisplayName": "item (Modos de exibição)",
+    "Name": "_cr56a_item_views",
+    "RelatedEntityName": "item",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1396f781-61d8-4024-8816-a2cf92c42083": "Active item",
+      "4fff09de-70ce-4da6-bfe6-205a42524316": "item Advanced Find View",
+      "5192e267-a037-4474-9e24-a651dc10c2b0": "item Lookup View",
+      "bf3a6fc6-2b70-4eb1-8a37-bf72559bd775": "item Associated View",
+      "fe295a06-4cd6-4f4b-bddc-89f33a740622": "Inactive item"
+    }
+  },
+  {
+    "DisplayName": "Status (item)",
+    "Name": "cr56a_item_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "item"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "item",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (item)",
+    "Name": "cr56a_item_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "item"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "item",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr56a_items",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr56a_item",
+    "MaxGetRowsCount": 500,
+    "Name": "item",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr56a_imagem": "Imagem (cr56a_imagem)",
+      "cr56a_imagemid": "cr56a_ImagemId",
+      "cr56a_img": "img",
+      "cr56a_imgid": "cr56a_imgId",
+      "cr56a_item_AsyncOperations": "System Jobs",
+      "cr56a_item_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr56a_item_DuplicateBaseRecord": "Duplicate Records (cr56a_item_DuplicateBaseRecord)",
+      "cr56a_item_DuplicateMatchingRecord": "Duplicate Records (cr56a_item_DuplicateMatchingRecord)",
+      "cr56a_item_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr56a_item_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr56a_item_ProcessSession": "Process Sessions",
+      "cr56a_item_SyncErrors": "Sync Errors",
+      "cr56a_itemid": "item",
+      "cr56a_teste": "teste",
+      "cr56a_titulo": "Título",
+      "createdby": "Created By",
+      "createdon": "Imagem (createdon)",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "item",
+    "Type": "NativeCDSDataSourceInfo"
+  }
+]
